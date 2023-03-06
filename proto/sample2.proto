@@ -1,0 +1,14 @@
+syntax = "proto3";
+package sample2;
+
+service Sample2 {
+    rpc sample2 (Sample2Request) returns (Sample2Reply);
+}
+
+message Sample2Request {
+    string name = 1;
+}
+
+message Sample2Reply {
+    string message = 1;
+}
